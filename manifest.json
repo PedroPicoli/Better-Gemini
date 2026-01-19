@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Better Gemini",
+  "version": "1.0",
+  "description": "Enhances aspects of Gemini AI.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://gemini.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "permissions": []
+}
